@@ -14,7 +14,6 @@
 		5E164BB1282A6F6B005327C3 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E164BB0282A6F6B005327C3 /* ApiManager.swift */; };
 		5E164BB3282A6FBF005327C3 /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E164BB2282A6FBF005327C3 /* ForecastModel.swift */; };
 		5E164BB5282A748A005327C3 /* DailyForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E164BB4282A748A005327C3 /* DailyForecastViewController.swift */; };
-		5E164BB9282A78C6005327C3 /* ExtensionsForVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E164BB8282A78C6005327C3 /* ExtensionsForVC.swift */; };
 		5E752FAF282680BE00244514 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E752FAE282680BE00244514 /* AppDelegate.swift */; };
 		5E752FB1282680BE00244514 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E752FB0282680BE00244514 /* SceneDelegate.swift */; };
 		5E752FB3282680BE00244514 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E752FB2282680BE00244514 /* MainViewController.swift */; };
@@ -32,7 +31,6 @@
 		5E164BB0282A6F6B005327C3 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		5E164BB2282A6FBF005327C3 /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 		5E164BB4282A748A005327C3 /* DailyForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastViewController.swift; sourceTree = "<group>"; };
-		5E164BB8282A78C6005327C3 /* ExtensionsForVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsForVC.swift; sourceTree = "<group>"; };
 		5E752FAB282680BE00244514 /* HomeWork14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E752FAE282680BE00244514 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E752FB0282680BE00244514 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,14 +78,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		5E164BB7282A787E005327C3 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5E164BB8282A78C6005327C3 /* ExtensionsForVC.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		5E752FA2282680BE00244514 = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +102,6 @@
 				5E752FB0282680BE00244514 /* SceneDelegate.swift */,
 				5E752FAE282680BE00244514 /* AppDelegate.swift */,
 				5E164BA928268B25005327C3 /* ViewControllers */,
-				5E164BB7282A787E005327C3 /* Extensions */,
 				5E164BB6282A7761005327C3 /* Model */,
 				5E752FB7282680BE00244514 /* Assets.xcassets */,
 				5E752FB9282680BE00244514 /* LaunchScreen.storyboard */,
@@ -261,7 +250,6 @@
 			files = (
 				5E164BAB282A6C13005327C3 /* ForecastTableViewCell.swift in Sources */,
 				5E164BAD282A6DF3005327C3 /* Observable.swift in Sources */,
-				5E164BB9282A78C6005327C3 /* ExtensionsForVC.swift in Sources */,
 				5E752FB3282680BE00244514 /* MainViewController.swift in Sources */,
 				5E164BB1282A6F6B005327C3 /* ApiManager.swift in Sources */,
 				5E752FAF282680BE00244514 /* AppDelegate.swift in Sources */,

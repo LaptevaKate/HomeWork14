@@ -24,5 +24,4 @@ class ForecastTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
-
 }
