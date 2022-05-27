@@ -8,7 +8,7 @@
 import Foundation
 
 
-class Observable<T> {
+final class Box<T> {
     
     private var listener: ((T) -> ())?
     

@@ -7,11 +7,11 @@
 
 import Foundation
 
-final class ViewModel {
+class ViewModel {
     
     private let api = ApiManager()
     
-    let forecastModel: Observable<ForecastModel?> = Observable(nil)
+    let forecastModel: Box<ForecastModel?> = Box(nil)
     
     func fetchForecast(url: String) {
         api.fetchForecast(url: url) { result in
@@ -23,4 +23,6 @@ final class ViewModel {
             }
         }
     }
+    
+    
 }

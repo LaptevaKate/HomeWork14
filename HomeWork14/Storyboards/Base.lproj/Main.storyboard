@@ -177,6 +177,14 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundDay" translatesAutoresizingMaskIntoConstraints="NO" id="PUr-Ib-Z7D">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zne-VG-kdD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pz9-vN-BQX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnW-np-b6y">
                                 <rect key="frame" x="50" y="231" width="314" height="50"/>
                                 <constraints>
@@ -233,13 +241,16 @@
                             <constraint firstItem="sTI-OW-ufG" firstAttribute="top" secondItem="Fh3-Wi-NWA" secondAttribute="bottom" constant="70" id="8hK-Be-6bl"/>
                             <constraint firstItem="iJw-vl-z9h" firstAttribute="trailing" secondItem="SnW-np-b6y" secondAttribute="trailing" constant="50" id="E2G-q4-orV"/>
                             <constraint firstItem="sTI-OW-ufG" firstAttribute="leading" secondItem="iJw-vl-z9h" secondAttribute="leading" constant="50" id="Gpu-ze-ccG"/>
+                            <constraint firstItem="zne-VG-kdD" firstAttribute="top" secondItem="nlI-MK-q6i" secondAttribute="top" id="Hkm-q3-1vU"/>
                             <constraint firstItem="SnW-np-b6y" firstAttribute="top" secondItem="eUd-6x-5dq" secondAttribute="bottom" constant="100" id="J9S-rn-ZJ4"/>
                             <constraint firstAttribute="bottom" secondItem="PUr-Ib-Z7D" secondAttribute="bottom" id="Jry-mJ-JUn"/>
                             <constraint firstItem="iJw-vl-z9h" firstAttribute="trailing" secondItem="JLq-E4-pJW" secondAttribute="trailing" constant="50" id="KJz-DA-7dC"/>
                             <constraint firstItem="Fh3-Wi-NWA" firstAttribute="leading" secondItem="iJw-vl-z9h" secondAttribute="leading" constant="50" id="KgO-BG-bc4"/>
                             <constraint firstItem="t08-o9-rpT" firstAttribute="leading" secondItem="iJw-vl-z9h" secondAttribute="leading" constant="20" id="QC9-z7-OfP"/>
+                            <constraint firstAttribute="bottom" secondItem="zne-VG-kdD" secondAttribute="bottom" id="TPM-b1-QWB"/>
                             <constraint firstItem="Fh3-Wi-NWA" firstAttribute="top" secondItem="SnW-np-b6y" secondAttribute="bottom" constant="70" id="Uog-Hh-KWq"/>
                             <constraint firstItem="PUr-Ib-Z7D" firstAttribute="top" secondItem="nlI-MK-q6i" secondAttribute="top" id="a8X-ot-Pbo"/>
+                            <constraint firstItem="zne-VG-kdD" firstAttribute="trailing" secondItem="iJw-vl-z9h" secondAttribute="trailing" id="bBT-5W-dyd"/>
                             <constraint firstItem="SnW-np-b6y" firstAttribute="leading" secondItem="iJw-vl-z9h" secondAttribute="leading" constant="50" id="ckL-vG-Dbi"/>
                             <constraint firstItem="JLq-E4-pJW" firstAttribute="top" secondItem="sTI-OW-ufG" secondAttribute="bottom" constant="70" id="d1q-2p-9sj"/>
                             <constraint firstItem="iJw-vl-z9h" firstAttribute="bottom" secondItem="t08-o9-rpT" secondAttribute="bottom" constant="20" id="eLN-rL-fki"/>
@@ -249,10 +260,12 @@
                             <constraint firstItem="eUd-6x-5dq" firstAttribute="top" secondItem="iJw-vl-z9h" secondAttribute="top" constant="50" id="uGU-ku-Nda"/>
                             <constraint firstItem="iJw-vl-z9h" firstAttribute="trailing" secondItem="sTI-OW-ufG" secondAttribute="trailing" constant="50" id="xpS-e3-3SS"/>
                             <constraint firstItem="eUd-6x-5dq" firstAttribute="leading" secondItem="iJw-vl-z9h" secondAttribute="leading" constant="20" id="ydr-M5-wmD"/>
+                            <constraint firstItem="zne-VG-kdD" firstAttribute="leading" secondItem="iJw-vl-z9h" secondAttribute="leading" id="zLE-xM-3rH"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="airHumidityLabel" destination="Fh3-Wi-NWA" id="Wn9-1Q-fDb"/>
+                        <outlet property="blurEffect" destination="zne-VG-kdD" id="Sn7-8B-npF"/>
                         <outlet property="dateLabel" destination="SnW-np-b6y" id="HCA-Yu-Ztf"/>
                         <outlet property="gustOfWindLabel" destination="sTI-OW-ufG" id="cqR-8g-QsA"/>
                         <outlet property="pressureLabel" destination="JLq-E4-pJW" id="6U7-fN-77F"/>

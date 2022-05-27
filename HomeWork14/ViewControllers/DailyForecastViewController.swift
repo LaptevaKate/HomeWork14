@@ -14,23 +14,23 @@ class DailyForecastViewController: UIViewController {
     @IBOutlet weak var airHumidityLabel: UILabel!
     @IBOutlet weak var gustOfWindLabel: UILabel!
     @IBOutlet weak var pressureLabel: UILabel!
+    @IBOutlet weak var blurEffect: UIVisualEffectView!
     
     
     //MARK: - Properties
     var forecast: ForecastModel?
     var index = 0
-    var totalDays = 5
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        blurEffect.alpha = 0.8
         showForecast(for: index)
     }
     
     // MARK: - Methods
     func showForecast(for index: Int) {
-        if (index != -1) && (index < totalDays) {
+        if (index > -1) && (index < forecast?.list.count ?? 0) {
             let dateFormetter = DateFormatter()
             dateFormetter.dateFormat = "yyyy-MM-dd"
             if let date = forecast?.list[index].date {
