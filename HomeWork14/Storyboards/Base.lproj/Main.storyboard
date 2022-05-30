@@ -155,9 +155,7 @@
                     <navigationItem key="navigationItem" id="B0a-Tv-KaW"/>
                     <connections>
                         <outlet property="activityIndicator" destination="aMC-E7-78y" id="bRg-ii-t7E"/>
-                        <outlet property="backgroundImageView" destination="29B-oi-6Ru" id="FYO-2c-uhr"/>
-                        <outlet property="blueEffect" destination="8R7-X4-ote" id="8am-XA-aus"/>
-                        <outlet property="chooseCountryLabel" destination="Ttc-2a-PLC" id="Fxl-Ec-SKN"/>
+                        <outlet property="blurEffect" destination="8R7-X4-ote" id="VLD-gq-JBb"/>
                         <outlet property="selectCountryPickerView" destination="D6a-T4-WHo" id="poQ-dp-vMu"/>
                         <outlet property="tableView" destination="UF1-6K-Xny" id="wlj-Ot-QmQ"/>
                     </connections>
